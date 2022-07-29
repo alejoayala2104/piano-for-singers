@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    padding: 0;
+}
+
+.piano{
+    width: 100vh;
+    display: flex;
+}
+.white{
+    background-color: white;
+    border: 1px solid black;
+    width: 10vw;
+    height: 50vh;
+}
+
+.black{
+    background-color: black;
+    width: 5vw;
+    height: 25vh;
+}
