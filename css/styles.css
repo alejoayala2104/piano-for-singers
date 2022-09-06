@@ -11,13 +11,37 @@ body{
     align-items: center;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 0;        
+}
+.buttons-container button{
+    width: 30px;
+    height: 30px;        
+}
+
+.piano-container{
+    display: flex;
+    overflow-x: scroll;    
+}
+
 .piano{
     display: flex;
     font-family: Helvetica, sans-serif;
+    
 }
 
 .key{
-    height: calc(var(--width)*4);
+    height: calc(var(--width)*4);  
+    max-height: 100vh;
     width: var(--width);
     display: flex;
     justify-content: center;
@@ -47,3 +71,4 @@ body{
     z-index: 2;
     color: white;
 }
+
