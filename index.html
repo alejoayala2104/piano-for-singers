@@ -6,57 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/audiosynth.js" defer></script>
-    <script src="js/app.js" defer></script>
+    <script src="js/audiosynth.js" defer></script>  
+    <script src="js/app.js" defer></script>  
 </head>
 <body>
     <main>
-        <div class="buttons-container">
-            <button onclick="addOctave()" id="add-octave">+</button>
-            <button onclick="subtractOctave()" id="subtract-octave">-</button>
-        </div>            
+        <div class="features-container">
+            <div class="options-container">
+                <label for="options-dropdown">Type</label>
+                <select name="options-dropdown" id="options-dropdown">
+                    <option value="single">Single</option>
+                    <option value="123">123</option>
+                    <option value="12345">12345</option>
+                    <option value="scale">Scale</option>
+                </select>
+            </div>
+
+            <div class="buttons-container">
+                <button onclick="addOctave()" id="add-octave">+</button>
+                <button onclick="subtractOctave()" id="subtract-octave">-</button>
+            </div> 
+        </div>
+                   
         <div class="piano-container">
             <div class="piano">
-                <div data-note="C" class="key white">C</div>
-                <div data-note="C#" class="key black">C#</div>
-                <div data-note="D" class="key white">D</div>
-                <div data-note="D#" class="key black">D#</div>
-                <div data-note="E" class="key white">E</div>
-                <div data-note="F" class="key white">F</div>
-                <div data-note="F#" class="key black">F#</div>
-                <div data-note="G" class="key white">G</div>
-                <div data-note="G#" class="key black">G#</div>
-                <div data-note="A" class="key white">A</div>
-                <div data-note="A#" class="key black">A#</div>
-                <div data-note="B" class="key white">B</div>
+                <div data-note="C" data-octave="1" class="key white">C</div>
+                <div data-note="C#" data-octave="1" class="key black">C#</div>
+                <div data-note="D" data-octave="1" class="key white">D</div>
+                <div data-note="D#" data-octave="1" class="key black">D#</div>
+                <div data-note="E" data-octave="1" class="key white">E</div>
+                <div data-note="F" data-octave="1" class="key white">F</div>
+                <div data-note="F#" data-octave="1" class="key black">F#</div>
+                <div data-note="G" data-octave="1" class="key white">G</div>
+                <div data-note="G#" data-octave="1" class="key black">G#</div>
+                <div data-note="A" data-octave="1" class="key white">A</div>
+                <div data-note="A#" data-octave="1" class="key black">A#</div>
+                <div data-note="B" data-octave="1" class="key white">B</div>
             </div>
             <div class="piano">
-                <div data-note="C" class="key white">C</div>
-                <div data-note="C#" class="key black">C#</div>
-                <div data-note="D" class="key white">D</div>
-                <div data-note="D#" class="key black">D#</div>
-                <div data-note="E" class="key white">E</div>
-                <div data-note="F" class="key white">F</div>
-                <div data-note="F#" class="key black">F#</div>
-                <div data-note="G" class="key white">G</div>
-                <div data-note="G#" class="key black">G#</div>
-                <div data-note="A" class="key white">A</div>
-                <div data-note="A#" class="key black">A#</div>
-                <div data-note="B" class="key white">B</div>
+                <div data-note="C" data-octave="2" class="key white">C</div>
+                <div data-note="C#" data-octave="2" class="key black">C#</div>
+                <div data-note="D" data-octave="2" class="key white">D</div>
+                <div data-note="D#" data-octave="2" class="key black">D#</div>
+                <div data-note="E" data-octave="2" class="key white">E</div>
+                <div data-note="F" data-octave="2" class="key white">F</div>
+                <div data-note="F#" data-octave="2" class="key black">F#</div>
+                <div data-note="G" data-octave="2" class="key white">G</div>
+                <div data-note="G#" data-octave="2" class="key black">G#</div>
+                <div data-note="A" data-octave="2" class="key white">A</div>
+                <div data-note="A#" data-octave="2" class="key black">A#</div>
+                <div data-note="B" data-octave="2" class="key white">B</div>
             </div>
             <div class="piano">
-                <div data-note="C" class="key white">C</div>
-                <div data-note="C#" class="key black">C#</div>
-                <div data-note="D" class="key white">D</div>
-                <div data-note="D#" class="key black">D#</div>
-                <div data-note="E" class="key white">E</div>
-                <div data-note="F" class="key white">F</div>
-                <div data-note="F#" class="key black">F#</div>
-                <div data-note="G" class="key white">G</div>
-                <div data-note="G#" class="key black">G#</div>
-                <div data-note="A" class="key white">A</div>
-                <div data-note="A#" class="key black">A#</div>
-                <div data-note="B" class="key white">B</div>
+                <div data-note="C" data-octave="3" class="key white">C</div>
+                <div data-note="C#" data-octave="3" class="key black">C#</div>
+                <div data-note="D" data-octave="3" class="key white">D</div>
+                <div data-note="D#" data-octave="3" class="key black">D#</div>
+                <div data-note="E" data-octave="3" class="key white">E</div>
+                <div data-note="F" data-octave="3" class="key white">F</div>
+                <div data-note="F#" data-octave="3" class="key black">F#</div>
+                <div data-note="G" data-octave="3" class="key white">G</div>
+                <div data-note="G#" data-octave="3" class="key black">G#</div>
+                <div data-note="A" data-octave="3" class="key white">A</div>
+                <div data-note="A#" data-octave="3" class="key black">A#</div>
+                <div data-note="B" data-octave="3" class="key white">B</div>
             </div>
         </div>
     </main>
